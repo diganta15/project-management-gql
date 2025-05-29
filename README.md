@@ -68,18 +68,24 @@ cd ../client && npm start
 - GraphiQL IDE: `http://localhost:5000/graphql`
 
 ## Project Structure 📂
-├── client/
-│ ├── public/ # Static assets
+project-management-gql/
+├── client/ # React frontend
+│ ├── public/ # Static assets (favicon, index.html)
 │ └── src/
-│ ├── components/ # React components (ClientList, ProjectCard)
+│ ├── components/ # Reusable UI components
 │ ├── mutations/ # GraphQL mutation definitions
-│ ├── queries/ # GraphQL query definitions
-│ └── pages/ # Application views (Dashboard, Projects)
+│ ├── queries/ # GraphQL query operations
+│ ├── pages/ # Main application views
+│ └── App.js # Root component
 │
-├── server/
+├── server/ # GraphQL backend
 │ ├── config/ # Database configuration
-│ ├── models/ # MongoDB schemas (Client, Project)
-│ └── schema/ # GraphQL type definitions
+│ ├── models/ # Mongoose schemas
+│ ├── schema/ # GraphQL type definitions
+│ └── index.js # Server entry point
+│
+├── .gitignore # Version control exclusions
+└── LICENSE # MIT License file
 
 
 ## API Documentation 📚
